@@ -17,6 +17,7 @@
   shell: >
     mv composer.phar {{ composer_path }}
     creates={{ composer_path }}
+  sudo: true
 
 - name: Update Composer to latest version (if configured).
   shell: >
