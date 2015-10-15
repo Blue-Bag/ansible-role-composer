@@ -1,7 +1,7 @@
 ---
 dependencies:
   - name: ansible-role-php
-    src: git+git@github.com:Blue-Bag/ansible-role-composer.git
+    src: git+git@github.com:Blue-Bag/ansible-role-php.git
     version: remotes/origin/dev
 
 galaxy_info:
