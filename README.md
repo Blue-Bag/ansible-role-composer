@@ -4,6 +4,10 @@
 
 Installs Composer, the PHP Dependency Manager, on any Linux or UNIX system.
 
+Note: This is a fork from geerlinguy.ansible-role-composer - only to break the dependency chain.
+If you are using geerlingguy/ansible-role-php
+then use geerlingguy/ansible-role-composer
+
 ## Requirements
 
 `curl` and `php` (version 5.3+) should be installed and working.
