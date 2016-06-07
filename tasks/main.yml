@@ -11,13 +11,13 @@
   shell: >
     curl -sS https://getcomposer.org/installer | php
     creates={{ composer_path }}
-  remote_user: ansible  
+  remote_user: ansible
 
 - name: Move Composer into globally-accessible location.
   shell: >
     mv composer.phar {{ composer_path }}
     creates={{ composer_path }}
-  sudo: true
+  become: true
 
 - name: Update Composer to latest version (if configured).
   shell: >
